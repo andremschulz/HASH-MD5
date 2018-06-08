@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+/*
+ * HASH MD5
+ * https://github.com/HawkSTK1/MD5-HASH
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
+ */
+-->
+<html lang="PT-BR">
+<head>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta charset="utf-8">
+<title>Gerador MD5</title>
+<meta name="description" content="JavaScript MD5 implementation. Compatible with server-side environments like Node.js, module loaders like RequireJS, Browserify or webpack and all web browsers.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/IMGlogo.png" type="image/x-icon"/>
+<link rel="shortcut icon" href="IMG/logo.png" type="image/x-icon"/>
+<div><img src = "IMG/Logo GTECH.png" ></div>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body  oncontextmenu="return false">
+<style>
+body{
+background-color:white;
+}
+div{
+text-align: center;
+}
+h1,h2{
+text-align: center;
+font-size: 30px;
+}
+label{
+text-align: center;
+font-size: 24px;
+}
+button {
+text-align: center;
+}
+form {
+text-align: center;
+}
+textarea{
+  border-style: 50px solid;
+  border-color: black;
+  border-radius: 5px;
+
+}
+</style>
+<br>
+<h1>GERADOR HASH MD5</h1>
+<form>
+<div class="form-group">
+    <label>ENTRADA DE DADOS / SAÍDA DE DADOS:</label>
+	<br>
+    <textarea rows="5" cols="50" id="input"></textarea>
+	<textarea rows="5" cols="50" id="result"></textarea>
+    <br>
+	<br>
+  <button type="button" class="btn btn-dark btn-lg " id="calculate" >&nbspGERAR&nbsp&nbsp</button>
+	<button type="reset" class="btn btn-dark btn-lg " id="reset">RESETAR</button>
+	</div>
+</form>
+<script src="js/md5.js"></script>
+<script src="js/demo/demo.js"></script>
+<script type="text/javascript">
+function disableSelection(target){
+if (typeof target.onselectstart!="undefined") //IE
+target.onselectstart=function(){return false}
+else if (typeof target.style.MozUserSelect!="undefined") //Firefox
+target.style.MozUserSelect="none"
+else //Todas as outras rotas (ie: Opera)
+target.onmousedown=function(){return false}
+target.style.cursor = "default"
+}
+</script>
+<script type="text/javascript" language="Javascript">
+<!-- Inicio
+document.oncontextmenu = function(){return false}
+// Fim -->
+</script>
+<br>
+<div>
+<a href="https://github.com/HawkSTK1" target="_blank"> <img src = "IMG/github.png" class="link_thumb" ></a>
+<h6>v1.0.0</h6>
+</div>
+</body>
+<div>
+<footer>&copy; German Tech Sistemas. Todos os direitos reservados.</footer>
+</div>
+</html>
