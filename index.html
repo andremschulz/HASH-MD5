@@ -22,6 +22,7 @@
 <div><img src = "IMG/Logo GTECH.png" ></div>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
+
 <body  oncontextmenu="return false">
 <style>
 body{
@@ -48,6 +49,7 @@ textarea{
   border-style: 50px solid;
   border-color: black;
   border-radius: 5px;
+
 }
 </style>
 <br>
@@ -56,27 +58,18 @@ textarea{
 <div class="form-group">
     <label>ENTRADA DE DADOS / SAÍDA DE DADOS:</label>
 	<br>
-    <textarea rows="5" cols="50" id="input"></textarea>
-	<textarea rows="5" cols="50" id="result" name="select"onClick='highlight(this);'></textarea>
+<!-- <div class="form-row">
+    <input class="form-control col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4" rows="5" cols="10" id="input"></input>
+	<input class="form-control col-sm-4 col-md-4" rows="5" cols="10" id="result"></input>
+</div> -->
+<textarea name="name" rows="2" cols="35" id="input"></textarea>
+<textarea name="name" rows="2" cols="35" id="result"></textarea>
     <br>
 	<br>
-  <button type="button" class="btn btn-dark btn-lg " id="calculate" onClick="goToURL()" value="Selecionar e Copiar">&nbspGERAR&nbsp&nbsp</button>
-	<button type="reset" class="btn btn-dark btn-lg " id="reset">RESETAR</button>
+  <button type="button" class="btn btn-dark " id="calculate" >&nbspGERAR&nbsp&nbsp</button>
+	<button type="reset" class="btn btn-dark " id="reset">RESETAR</button>
 	</div>
 </form>
-<script language="JavaScript">
-var copytoclip=1
-function HighlightAll(theField) {
-var tempval=eval("document."+theField)
-tempval.focus()
-tempval.select()
-}
-function highlight(field) {
-       field.focus();
-       field.select();
-}
-function goToURL() { window.location = "javascript:HighlightAll('forms[0].select')";}
-</script>
 <script src="js/md5.js"></script>
 <script src="js/demo/demo.js"></script>
 <script type="text/javascript">
@@ -91,13 +84,20 @@ target.style.cursor = "default"
 }
 </script>
 <script type="text/javascript" language="Javascript">
+<!-- Inicio
 document.oncontextmenu = function(){return false}
+// Fim -->
 </script>
 <div>
-<a href="https://github.com/HawkSTK1" target="_blank"> <img src = "IMG/github.png" class="link_thumb" ></a>
+<a href="https://github.com/HawkSTK1" target="_blank"> <img src ="IMG/github.png" class="link_thumb"> </a>
+<br>
 </div>
 </body>
+<br>
 <div>
-	<footer> <a href="http://www.germantech.com.br/site/index.html" target="_blank" >&copy; German Tech Sistemas </a>. Todos os direitos reservados.</footer>
+	<footer>
+    <a href="http://www.germantech.com.br/site/index.html" target="_blank" >&copy; 2018 German Tech Sistemas
+    </a>. Todos os direitos reservados.
+  </footer>
 </div>
 </html>
